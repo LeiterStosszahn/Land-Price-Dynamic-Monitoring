@@ -95,7 +95,7 @@ def transform_form(filling_org,city,year,quarter,data_path,save_path):
 	usecols=hot_update.get("Import","form_data")
 	header=hot_update.getint("Import","form_header")
 	#Import data from excel
-	form_data=pd.read_excel(data_path,sheet_name=sheet_name,usecols=usecols,header=header)
+	form_data=pd.read_excel(data_path,sheet_name=sheet_name,usecols=usecols,header=header,converters={"Sample_NO1":str,"Sample_NO2":str,"Sample_NO3":str})
 	sample_data=pd.read_excel(sample_cal_path,sheet_name=sheet_name,usecols=usecols,header=header)
 	form_data=form_data.fillna(value=" ")
 	form_col_names=form_data.columns
@@ -114,6 +114,7 @@ def transform_form(filling_org,city,year,quarter,data_path,save_path):
 	dates=["sell_date","Evulate_time","Complete_date","Sample1_time","Sample2_time","Sample3_time","Res_Sample1_time","Res_Sample2_time","Res_Sample3_time"]
 	for date in dates:
 		form_data[date]=form_data[date].apply(lambda x:x.strftime("%Y{}%m{}%d").format("/","/") if type(x)!=str else x)
+	sample_ids=[]
 
 	#Import sample sheet and creat floder
 	sheet_form=BookWriter(sample_form_path)

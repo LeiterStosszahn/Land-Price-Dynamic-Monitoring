@@ -1,0 +1,1 @@
+pyinstaller -F -w -i bin/logo.ico ×ª±í²âÊÔ.py --clean
