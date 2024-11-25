@@ -1,0 +1,49 @@
+[Import]
+trans_name = 交易样点
+trans_data = A:AW
+trans_header = 1
+form_name = 表格信息
+form_data = A:FV
+form_header = 3
+rent_name = 表格信息
+rent_data = A:C,V:V,FW:FY
+rent_header = 3
+form_and_rent_name = 表格信息
+form_and_rent_data = A:FY
+form_and_rent_header = 3
+weight_name = 报告信息
+weight_data = A:C,S:U
+weight_header = 1
+report_name = 报告信息
+report_data = A:AA
+report_header = 1
+
+[upload_regular_path]
+url = https://111.205.225.139:820/web-djxxdtjc/#/platform/gjs/jbsjgl/zcjbsj
+weight1 = /html/body/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[2]/div/div[2]/div[1]/div/div[2]/input
+weight2 = /html/body/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[2]/div/div[2]/div[2]/div/div[2]/input
+explain = /html/body/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[4]/input
+save_btn = /html/body/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/button[1]
+
+[upload_join_path]
+url = https://111.205.225.139:820/web-djxxdtjc/#/platform/gjs/jbsjgl/zcjbsj
+weight1 = /html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[2]/div/div[2]/div[1]/div/div[2]/input
+weight2 = /html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[2]/div/div[2]/div[2]/div/div[2]/input
+explain = /html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/table/tbody/tr[3]/td[4]/input
+save_btn = /html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/button[1]
+
+[upload_url]
+login_url = https://111.205.225.139:820/web-djxxdtjc/#/login
+usr = //div[@id="root"]/div/div[2]/div[2]/input
+pwd = //div[@id="root"]/div/div[2]/div[3]/input
+login_btn = //div[@id="root"]/div/div[2]/div[4]/button
+citys = //div[@id="root"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[1]/div[2]//tbody/tr/td[3]
+tb_result = //div[@id="root"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]//tbody/tr[%s]/td/button
+tb_buttons = //div[@id="root"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[3]/div[2]/div/table/tbody/tr/td[3]/button[2]
+submit_click = //*[@id="root"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[1]/div[2]/table/tbody/tr[%s]/td[1]/span/label/span/input
+submit = //*[@id="root"]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/button[2]
+
+[authorize]
+key = 0040-1111-7429A0-0000-627db4
+pwd = 0x10-1100-7429a0-1000-98c203
+

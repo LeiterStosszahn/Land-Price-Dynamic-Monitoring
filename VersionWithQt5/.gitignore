@@ -1,0 +1,5 @@
+/dist/
+/build/
+/_test/*.xlsx
+/_test/*成果/
+__pycache__
